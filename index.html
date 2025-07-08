@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css">
+   
+   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="left">
-<div class="logo">
+<div class="logo invert bg-cooo" title="Spotify">
     <img src="logo.svg" alt="logo">
 </div>
-<div class="button">
-    <button><img src="home.svg" alt="Home"></button>
+<div class="button" title="Home">
+    <button><img src="home.svg" class="invert" alt="Home"></button>
 </div>
-<div class="search-container">
-  <i class="icon-left"><img src="search.svg" alt=""></i> <!-- magnifying glass -->
+<div class="search-container ">
+  <i class="icon-left invert"><img src="search.svg" alt=""></i> <!-- magnifying glass -->
   <input type="text" id="search" placeholder="What do you want to play? " />
   
   <div class="vl"></div>
-  <i class="icon-right" id="clearBtn"><img src="browse.svg" alt=""></i> <!-- trash bin -->
+  <i class="icon-right invert" id="clearBtn"><img src="browse.svg" alt=""></i> <!-- trash bin -->
 </div>
 
 
@@ -34,7 +36,7 @@
         <li><a href="">Support</a> </li>   
         <li><a href="">Download</a></li>
         <div class="vll"></div>
-        <img src="./install.svg"  width="15px" height="15px" alt="">
+        <img src="./install.svg" class="invert" width="15px" height="15px" alt="">
         <li class="gap"><a href="">Install App</a></li>
         <li class="eat"><a href="">Sign up</a></li>
         
@@ -47,8 +49,9 @@
     </header>
     <main>
         <div class="lside">
-<div class="heading">  <div> <h2>Your Library</h2></div>
-<div><img src="plusele.svg" width="20" height="20" alt="plus"></div>
+            <div class="l">
+                <div class="heading">  <div> <h2>Your Library</h2></div>
+<div><img src="plusele.svg" class="invert" width="20" height="20" alt="plus"></div>
 </div>
 <div class="scroll">
     <div class="play">
@@ -76,10 +79,92 @@
     <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
      <!-- <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a> -->
     </div>
-</div></di>
+</div>
+            </div>
+</div>
 
         </div>
         <div class="rside">
+            
+            <h2>Trending Songs</h2>
+            <div class="container"><div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+<div class="cardContainer">
+    <div class="card">
+        <div class="svg">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+             shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910" alt="">
+        <p><span class="songN">At Peace</span>
+             <br><span class="artist">Karan Aujla,Ikky</span></p>
+    </div>
+</div>
+</div>
 
         </div>
     </main>
